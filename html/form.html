@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Forms</title>
+</head>
+<body>
+    <form action="">
+        <fieldset>
+            <legend>Personal information</legend>
+            <label for="name">
+                Name
+                <input type="text" id="name"/>
+            </label>
+            <br/>
+            <label for="email">
+                E-mail
+                <input type="email" id="email"/>
+            </label>
+        </fieldset>
+        <fieldset>
+            <legend>Credentials</legend>
+            <label for="password">
+                Password
+                <input type="password" id="password"/>
+            </label>
+            <br/>
+            <label for="confirm-password">
+                Confirm Password
+                <input type="password" id="confirm-password"/>
+            </label>
+        </fieldset>
+        <fieldset>
+            <legend>Preferences</legend>
+            <label for="dark">
+                <input type="radio" id="dark" name="theme" checked> Dark
+            </label>
+            <br/>
+            <label for="light">
+                <input type="radio" id="light" name="theme"> Light
+            </label>
+        </fieldset>
+        <fieldset>
+            <legend>Pet</legend>
+            <label for="dog">
+                <input type="checkbox" id="dog"> Dog
+            </label>
+            <br/>
+            <label for="cat">
+                <input type="checkbox" id="cat"> Cat
+            </label>
+            <br/>
+            <label for="hamster">
+                <input type="checkbox" id="hamster"> Hamster
+            </label>
+        </fieldset>
+        <fieldset>
+            <legend>State</legend>
+            <label for="state">
+                State
+                <select id="state">
+                    <option value="">[...]</option>
+                    <option value="SP">São Paulo</option>
+                    <option value="MG">Minas Gerais</option>
+                    <option value="SC">Santa Catarina</option>
+                    <option value="AM">Amazonas</option>
+                </select>
+            </label>
+        </fieldset>
+        <fieldset>
+            <legend>Comments</legend>
+            <label for="comments">
+                <textarea id="comments" cols="30" rows="10"></textarea>
+            </label>
+        </fieldset>
+        <button type="submit">✅ Send</button>
+        <button type="reset">🗑 Clean</button>
+    </form>
+</body>
+</html>
