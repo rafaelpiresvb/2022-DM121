@@ -3,22 +3,45 @@
     padding: 0;
 }
 
+a:link {
+    text-decoration: none;
+}
+
+a:link:hover {
+    text-decoration: underline;
+    text-decoration-color: orange;
+}
+
+a:link[href^='http']::after {
+    content: "🌐"
+}
+
 #header {
     background-color: darkslategray;
     padding: 15px;
+    margin-bottom: 20px;
 }
 
 h1 {
-    border: 1px solid red;
-    background-color: lime;
+    color: white;
 }
 
+p,
 .highlight {
+    transition: all 0.5s ease-in-out;
+}
+
+p:hover {
+    color: #EEE;
+}
+
+p:hover .highlight {
     padding: 2px;
     background-color: yellow;
+    color: black;
 }
 
-.extra {
+p:hover .extra {
     border: 2px solid red;
     border-radius: 14px;
     box-shadow: 5px 5px lightgray, -5px -5px lightgray;
@@ -26,4 +49,10 @@ h1 {
 
 [title] {
     cursor: help;
+}
+
+p {
+    margin-bottom: 50px;
+    border-bottom: 2px solid gray;
+    padding: 0px 15px 50px;
 }
